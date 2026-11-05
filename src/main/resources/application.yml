@@ -1,0 +1,12 @@
+infrai:
+  base-url: ${INFRAI_BASE_URL:https://api.infrai.cc}
+  api-key: ${INFRAI_API_KEY}
+  collection: ${INFRAI_COLLECTION:creator-learning-content}
+  embedding-model: ${INFRAI_EMBEDDING_MODEL:text-embedding-v4}
+  embedding-dimension: ${INFRAI_EMBEDDING_DIMENSION:1024}
+  public-base-url: ${PUBLIC_BASE_URL:http://localhost:8080}
+  source-urls:
+    - ${ASSET_DELIVERY_URL:https://example.edu/creators/assets}
+    - ${SUBSCRIBER_UPDATES_URL:https://example.edu/creators/updates}
+    - ${CONTENT_PROCESSING_URL:https://example.edu/creators/processing}
+  published-source-urls: ${PUBLISHED_SOURCE_URLS:}

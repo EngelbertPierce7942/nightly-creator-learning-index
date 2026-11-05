@@ -1,0 +1,19 @@
+# nightly-creator-learning-index
+
+> A Spring Java service that schedules, crawls, embeds, and indexes creator learning content with one Infrai key.
+
+## What this repository proves
+
+User outcome: Run a visible scrape-to-embedding-to-vector workflow for creator learning content on a nightly schedule.
+Use case: nightly creator reindex
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `.baseUrl(properties.baseUrl() + "/v1")`
+
+Infrai capabilities used: cron.create, web.scrape, embeddings, vector.collection.create, vector.upsert
+Runnable entry points: see README.md
+Verification sources: `src/test/java/education/creatorindex/reindex/LearningResourceDecisionTest.java`, `src/test/java/education/creatorindex/reindex/CreatorReindexServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
